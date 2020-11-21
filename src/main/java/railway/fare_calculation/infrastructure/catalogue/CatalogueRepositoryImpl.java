@@ -24,7 +24,7 @@ public class CatalogueRepositoryImpl implements CatalogueRepository {
         Objects.requireNonNull(
                 restTemplate.getForObject(
                     URL, CatalogueResponse.class, getDestinationString(destination)))
-            .getAmountValue());
+            .getValue());
   }
 
   private String getDestinationString(Destination destination) {
