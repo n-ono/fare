@@ -14,7 +14,7 @@ import railway.fare_calculation.infrastructure.discount.response.DiscountRespons
 @AllArgsConstructor
 public class DiscountRepositoryImpl implements DiscountRepository {
   public static final String URL =
-      "http://discount:8080/discount_calculation/discount-fare?fare={fare}&trip-type={tripType}&destination={destination}&children={children}&adults={adults}&departure-month-day={departureMonthDay}";
+      "http://discount-api.discount.internal:8080/discount_calculation/discount-fare?fare={fare}&trip-type={tripType}&destination={destination}&children={children}&adults={adults}&departure-month-day={departureMonthDay}";
 
   @Autowired private final RestTemplate restTemplate;
 
